@@ -99,7 +99,7 @@ const Profile = () => {
       }
       <div className={styles.profile} ref={mainRef} onClick={handleClosePopup}>
         <div className={styles.header}>
-          <button onClick={handleBack}>back</button>
+          <button className={ styles.back} onClick={handleBack}>back</button>
           <div className={styles.navs}>
             <Clock/>
           </div>

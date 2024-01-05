@@ -7,14 +7,16 @@
     transform: translate(-50%,-50%);
     z-index: 1000;
     transition: all 0.2s ease;
+    background-color: rgb(95, 132, 165);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .popup .post{
-    background-color: rgb(95, 132, 165);
+    /* background-color: rgb(95, 132, 165); */
+    width: 100%;
     color: white;
     padding: 2rem;
     transition: all 0.2s ease;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .popup .post .postTitle{
     font-size: 1.2rem;
@@ -212,6 +214,24 @@
     }
     .userDetails{
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width:328px) {
+    .popup{
+        height: 35vh;
+    }
+    .popup .post{
+        box-shadow: none;
+        height: 100%;
+    }
+    .header .navs{
+        width: 100%;
+    }
+    button.back{
+        position: fixed;
+        bottom: 0px;
+        background-color:rgb(157, 190, 233);
     }
 }
 .post .body::first-letter{

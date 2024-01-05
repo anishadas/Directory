@@ -23,7 +23,7 @@ const Directory = () => {
     
     return (
         <div className={styles.directory}>
-            <p className={styles.title}>Directory</p>
+            <p className={styles.titleD}>Directory</p>
             <div className={styles.postsContainer}>
                 {
                     users?.map((user, index) => (

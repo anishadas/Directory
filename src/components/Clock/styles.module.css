@@ -82,3 +82,13 @@ button.start{
         text-align: center;
     }
 }
+@media screen and (max-width:328px) {
+    .clock{
+        font-size: 0.8rem;
+          padding: 0.5rem;
+          /* margin: 0 0.5rem; */
+    }
+    select{
+        width: 35%;
+    }
+}
