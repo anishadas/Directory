@@ -1,8 +1,35 @@
-# React + Vite
+# DIRECTORY with ReactJS
+-------------------------------
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Components
+- Directory
+  - It consists of all users with their post counts
+  - API for users: `https://jsonplaceholder.typicode.com/users`
+  
+- Profile
+  - Specific routes based on user id
+  - post count is passed through queries
+  - Getting a user : `https://jsonplaceholder.typicode.com/users/${id}`
+  - Getting posts : `https://jsonplaceholder.typicode.com/posts?_limit=${postsCount}`
+  - Single post based on Id : `ttps://jsonplaceholder.typicode.com/posts/${id}`
 
-Currently, two official plugins are available:
+- Loader
+  - An UI enhancing element- shows a loading UI for server requests
+  
+- Clock
+  - `worldtime api` is used for all functionalities
+  - timezones: `https://worldtimeapi.org/api/timezone`
+  - local time : `https://worldtimeapi.org/api/timezone/${timezone}`
+  
+## Hooks
+- useState()
+- useEffect()
+- useRef()
+- useNavigate()
+- useLocation()
+- useParams()
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Modules
+- `moment-timezone`  
+  - The moment-timezone module is a part of the Moment.js library that provides functionality for working with time zones. 
+  - Moment.js is a popular JavaScript library for parsing, validating, manipulating, and formatting dates. 
