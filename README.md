@@ -1,7 +1,7 @@
 # DIRECTORY with ReactJS
 -------------------------------
 ## Deployment Site
-live - `https://mydirectorytm.netlify.app/`
+live - [deployment_site](`https://mydirectorytm.netlify.app/`)
 ## Components
 - Directory
   - It consists of all users with their post counts
