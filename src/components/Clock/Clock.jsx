@@ -12,7 +12,7 @@ function Clock() {
     //fetch countries and local time
     useEffect(() => {
         const fetchCountries = async () => {
-            const res = await fetch('http://worldtimeapi.org/api/timezone');
+            const res = await fetch('https://worldtimeapi.org/api/timezone');
             const data = await res.json();
             setCountries(data)
         }
@@ -50,7 +50,7 @@ function Clock() {
 
 
     const getTimeByTimezone = async (timezone) => {
-        const response = await fetch(`http://worldtimeapi.org/api/timezone/${timezone}`);
+        const response = await fetch(`https://worldtimeapi.org/api/timezone/${timezone}`);
         const data = await response.json();
         let time = moment.utc(data.utc_datetime)
         let localTime = time.utcOffset(data.utc_offset)
